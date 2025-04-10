@@ -32,7 +32,7 @@ const Header = () => {
     { label: t("nav.home"), href: "/" },
     { label: t("nav.about"), href: "/#about" },
     { label: t("nav.services"), href: "/#services" },
-    { label: t("nav.projects"), href: "/#projects" },
+    { label: t("nav.projects"), href: "/projects" },
     { label: t("nav.contact"), href: "/#contact" },
   ];
 
@@ -45,12 +45,12 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Logo */}
+        {/* Logo - made bigger */}
         <Link to="/" className="flex items-center">
           <img 
             src="/lovable-uploads/7979ffec-81c8-4b87-9e77-e1acbf39685e.png" 
             alt="AQUASILA" 
-            className="h-10 md:h-12" 
+            className="h-12 md:h-16" 
           />
         </Link>
 

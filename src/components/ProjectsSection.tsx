@@ -2,6 +2,7 @@
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Project {
   id: number;
@@ -68,9 +69,11 @@ const ProjectsSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-            {t("projects.viewAll")} <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/projects">
+            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+              {t("projects.viewAll")} <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
