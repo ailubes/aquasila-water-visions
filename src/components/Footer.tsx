@@ -1,4 +1,3 @@
-
 import { useLanguage } from "@/context/LanguageContext";
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -8,7 +7,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#2c4755] text-white"> {/* Changed background color */}
+    <footer className="bg-[#2c4755] text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and description */}
@@ -16,7 +15,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/7979ffec-81c8-4b87-9e77-e1acbf39685e.png" 
               alt="AQUASILA" 
-              className="h-12 mb-4" 
+              className="h-24 mb-4 transition-transform duration-300 hover:scale-110 hover:rotate-3 hover:drop-shadow-lg" 
             />
             <p className="text-white/70 mb-6">
               AQUASILA - {t("hero.subtitle")}
