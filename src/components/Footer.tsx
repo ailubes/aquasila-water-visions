@@ -1,6 +1,7 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -38,29 +39,29 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4">{t("nav.services")}</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-white/70 hover:text-primary transition-colors">
+                <Link to="/services/reservoirs" className="text-white/70 hover:text-primary transition-colors">
                   {t("services.reservoirs.title")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-white/70 hover:text-primary transition-colors">
+                <Link to="/services/pools" className="text-white/70 hover:text-primary transition-colors">
                   {t("services.pools.title")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-white/70 hover:text-primary transition-colors">
+                <Link to="/services/ponds" className="text-white/70 hover:text-primary transition-colors">
                   {t("services.ponds.title")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-white/70 hover:text-primary transition-colors">
+                <Link to="/services/aquaculture" className="text-white/70 hover:text-primary transition-colors">
                   {t("services.aquaculture.title")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-white/70 hover:text-primary transition-colors">
+                <Link to="/services/custom" className="text-white/70 hover:text-primary transition-colors">
                   {t("services.custom.title")}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
