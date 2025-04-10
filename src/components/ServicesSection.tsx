@@ -1,6 +1,6 @@
 
 import { useLanguage } from "@/context/LanguageContext";
-import { Droplet, Pool, Fish, Waves, Settings } from "lucide-react";
+import { Droplet, Water, Fish, Waves, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ServiceCardProps {
@@ -29,7 +29,7 @@ const ServicesSection = () => {
       descriptionKey: "services.reservoirs.description",
     },
     {
-      icon: <Pool className="h-6 w-6 text-primary" />,
+      icon: <Water className="h-6 w-6 text-primary" />,
       titleKey: "services.pools.title",
       descriptionKey: "services.pools.description",
     },
